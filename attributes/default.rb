@@ -1,4 +1,6 @@
 default[:valhalla][:user][:name]    = 'valhalla'
+default[:valhalla][:user][:uid]     = '3445'
+default[:valhalla][:user][:git]     = '3445'
 default[:valhalla][:base_dir]       = '/data'
 default[:valhalla][:s3bucket]       = 'mapzen.valhalla'
 default[:valhalla][:s3bucket_dir]   = 'prod'

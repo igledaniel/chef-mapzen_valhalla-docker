@@ -9,6 +9,8 @@
 
 # make the valhalla user
 user node[:valhalla][:user][:name] do
+  uid         node[:valhalla][:user][:uid]
+  gid         node[:valhalla][:user][:gid]
   manage_home false
   home        node[:valhalla][:base_dir]
   not_if      { node[:valhalla][:user][:name] == 'root' }
