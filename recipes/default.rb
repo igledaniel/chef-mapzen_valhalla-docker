@@ -25,7 +25,7 @@ dirs = [
 
 dirs.each do |d|
   directory d do
-    owner node[:valhalla][:user]
+    owner node[:valhalla][:user][:name]
     recursive true
   end
 end
