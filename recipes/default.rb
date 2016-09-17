@@ -12,6 +12,10 @@ package 'ruby23'
 package 'rubygems23'
 package 'ruby23-devel'
 
+execute 'update-alternatives --set ruby /usr/bin/ruby2.3' do
+  not_if "ls -l /etc/alternatives/ruby | grep 'ruby2\.3'"
+end
+
 # make the valhalla user
 user node[:valhalla][:user][:name] do
   uid         node[:valhalla][:user][:uid]
