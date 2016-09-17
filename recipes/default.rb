@@ -7,6 +7,9 @@
 # All rights reserved - Do Not Redistribute
 #
 
+# install ruby for sensu
+package 'ruby23'
+
 # make the valhalla user
 user node[:valhalla][:user][:name] do
   uid         node[:valhalla][:user][:uid]
