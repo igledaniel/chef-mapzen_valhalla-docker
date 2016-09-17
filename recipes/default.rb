@@ -10,6 +10,7 @@
 # install ruby for sensu
 package 'ruby23'
 package 'rubygems23'
+package 'ruby23-devel'
 
 # make the valhalla user
 user node[:valhalla][:user][:name] do
