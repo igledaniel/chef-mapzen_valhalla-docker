@@ -31,3 +31,5 @@ dirs.each do |d|
     recursive true
   end
 end
+
+include_recipe 'mapzen_valhalla-docker::get_routing_tiles'
